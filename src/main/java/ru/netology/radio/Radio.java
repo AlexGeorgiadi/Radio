@@ -35,22 +35,23 @@ public class Radio {
     public void increaseVolume() {
         if (currentVolume < 9) {
             currentVolume = currentVolume + 1;
+        } else {
+            currentVolume = 9;
         }
-        else {currentVolume = 9;}
     }
 
     public void reduceVolume() {
         if (currentVolume > 0) {
             currentVolume = currentVolume - 1;
+        } else {
+            currentVolume = 0;
         }
-        else {currentVolume = 0;}
     }
 
     public void next() {
         if (currentRadioStation < 9) {
             currentRadioStation = currentRadioStation + 1;
-        }
-        else {
+        } else {
             currentRadioStation = 0;
         }
     }
@@ -58,8 +59,7 @@ public class Radio {
     public void prev() {
         if (currentRadioStation > 1) {
             currentRadioStation = currentRadioStation - 1;
-        }
-        else {
+        } else {
             currentRadioStation = 9;
         }
     }
