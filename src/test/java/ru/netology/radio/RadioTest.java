@@ -15,6 +15,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldSetRadioStationIfQuantityIsChosen() {
         Radio radio = new Radio(100);

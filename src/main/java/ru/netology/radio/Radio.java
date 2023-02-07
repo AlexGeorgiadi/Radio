@@ -10,7 +10,7 @@ public class Radio {
 
 
     public Radio(int qtOfRadioStations) {
-maxRadioStation = minRadioStation+qtOfRadioStations-1;
+        maxRadioStation = minRadioStation + qtOfRadioStations - 1;
     }
 
     public Radio() {
